@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link -->
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- ends -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>copymate dashboard</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar" id="mySidebar">
+      <div class="sideBox">
+        <img src="Assets/Group 945.png" alt="sidebarimg" class="sidebarimg" style="margin-left: 10px;">
+        <h2 style="margin-top: 13px;margin-left: 25px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                /* identical to box height */
+                
+                letter-spacing: 0.02em;
+                
+                color: #000000;">CopyMate</h2>
+        <!-- <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()" style="text-decoration: none;">×</a>             -->
+      </div>
+      <hr>
+      <div class="dashSide">
+        <a href="#" style="text-decoration: none;color: #606060;color: #6F1CC8;opacity: 0.8;background: #F1E5FF;"><i
+            class="fas fa-home"></i>dashboard</a>
+        <a href="#" style="text-decoration: none;color: #606060;"><i class="fas fa-edit"></i>create page</a>
+        <a href="#" style="text-decoration: none;color: #606060;"><i><img src="Assets/Group.png"></i>page list</a></li>
+        <a href="#" style="text-decoration: none;color: #606060;" class="text-justify"><i><img
+              src="Assets/8773139411594941301 1.png"></i>add product</a></li>
+        <a href="#" style="text-decoration: none;color: #606060;"><i><img
+              src="Assets/13030236741547546488 1.png"></i>product list</a></li>
+        <hr>
+        <a href="#" style="text-decoration: none;color: #606060;"> <i><img
+              src="Assets/8598118331552644373 1.png"></i>settings</a></li>
+        <a href="#" style="text-decoration: none;color: #606060;"><i><img
+              src="Assets/325325621618134427 1.png"></i>logout</a></li>
+      </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <div id="main">
+      <div class="main_content">
+        <div class="header">
+          <!-- <span class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i> Dashboard</span>   -->
+          <span class="openbtn" onclick="openNav()" style="margin-top: 10px;">Dashboard</span>
+          <div class="dropdown">
+            <img src="Assets/Ellipse 3.png" class="img-fluid headerimg">
+            <i class="fas fa-ellipsis-v dropbtn" style="cursor: pointer;" onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="firstmain">
+          <div class="row">
+            <div class="col-md-7">
+
+              <div class="firstcard1">
+                <div class="stat" style="display: flex;justify-content: space-between;">
+                  <h3 style="font-family: Inter;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+              /* identical to box height */
+              
+              letter-spacing: 0.02em;
+              
+              color: #FFFFFF;
+              ">stats</h3>
+                  <form>
+                    <select>
+                      <option value="saab">August</option>
+                      <option value="fiat">september</option>
+                      <option value="audi">November</option>
+                    </select>
+                  </form>
+                </div>
+                <hr class="border-white-new">
+                <!-- <hr style="border: 4px solid #791FCE;"> -->
+                <!--  -->
+
+                <!--  -->
+                <div id="prog" style="display: flex; justify-content: space-around;">
+                  <div class="progress1" style="background-color: rgba(65, 16, 121, 1);">
+                    <div class="progress-done8" data- done="70">
+                    </div>
+                  </div>
+                  <div class="progress1" style="background-color: rgba(65, 16, 121, 1);">
+                    <div class="progress-done9" data- done="70">
+                    </div>
+                  </div>
+                  <div class="progress1" style="background-color: rgba(65, 16, 121, 1);">
+                    <div class="progress-done10" data- done="70">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="line">
+                  <!-- <hr class="border-white"> -->
+                  <div class="new">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <div class="centerbtn" style="position: absolute;">
+  <img src="Assets/Ellipse 58.png" alt="ellipse58" class="ellipse58">
+  <div class="roundborder" style="position: absolute;">
+    <p>ADD NEW PAGE</p>
+  </div>
+</div> -->
+            <div class="col-md-5">
+              <div class="firstcard2">
+                <h3 class="activity">activity<p class="last">Last 15 Days</p>
+                </h3>
+                <div class="container">
+                  <div class="box1">
+                    <div id="para1" style="position: absolute;">
+                      <p class="eightynine">89</p>
+                      <p class="aicreator">AI creator</p>
+                    </div>
+                    <div id="img1">
+                      <img src="Assets/ai (1) 1.png" alt="img1" class="img1" style="position: absolute;">
+                    </div>
+                  </div>
+                  <div class="box2">
+                    <div id="para2" style="position: absolute;">
+                      <p class="fiftysix">56</p>
+                      <p class="templatecreator">template creator</p>
+                    </div>
+                    <div id="img2">
+                      <img src="Assets/template 1.png" alt="img1" class="img2">
+                    </div>
+                  </div>
+                  <div class="box3">
+                    <div id="para3" style="position: absolute;">
+                      <p class="thirtyfour">34</p>
+                      <p class="designedpage">designed pages</p>
+                    </div>
+                    <div id="img3">
+                      <img src="Assets/web-design 1.png" alt="img1" class="img3">
+                    </div>
+                  </div>
+                  <div class="box4">
+                    <div id="para4" style="position: absolute;">
+                      <p class="eightynine">67</p>
+                      <p class="aicreator">designed banners</p>
+                    </div>
+                    <div id="img4">
+                      <img src="Assets/landing-page 1.png" alt="img1" class="img4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="info">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="secondcard">
+
+                <div class="overflow">
+                  <table class="table">
+                    <tbody>
+                      <h3 style="font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      
+      color: #6B1BC6;">sales table</h3>
+                      <tr>
+                        <td data-label="Account"><img src="Assets/image 3 (1).png" alt="active" class="activelogo">
+                        </td>
+                        <td>
+                          <a href="#"
+                            style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">Geeta</a>
+                          <div>
+                            <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">AI based</a>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="#" style="text-decoration: none; font-size: 14px;color: #606060;">Category</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none; font-size: 13px;color: #2F3031;font-weight: bold;">Optin</a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">started
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">01 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Last
+                            Edited On
+                          </a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">12 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td class="float">
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">68%</a>
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">progress</a>
+                          <div class="progress1" style="width: 100%;">
+                            <div class="progress-done" data- done="70">
+                            </div>
+                          </div>
+                        </td>
+                        <td id="arrow"> <button type="submit" style="color: #606060; text-decoration: none;"> <i
+                              class="fas fa-chevron-right"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="Assets/image 3 (1).png" alt="img2" class="imgb">
+                        </td>
+
+                        <td>
+                          <a href="#"
+                            style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">Optical
+                            Fiber</a>
+                          <div>
+                            <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">Designed
+                              Pag..</a>
+                          </div>
+                        </td>
+
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Category
+                          </a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">Sales
+                            </a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Started
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">01 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#" style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">
+                            Last Edited
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">12 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td class="float">
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">100%</a>
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">progress</a>
+                          <div class="progress1" style="width: 100%;">
+                            <div class="progress-done1" data- done="70">
+                            </div>
+                          </div>
+                        </td>
+                        <td id="arrow"> <button type="submit" style="color: #606060; text-decoration: none;"> <i
+                              class="fas fa-chevron-right"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="Assets/image 3 (1).png" alt="img2" class="imgc">
+                        </td>
+                        <td>
+                          <a href="#"
+                            style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;color;">Song.pk</a>
+                          <div>
+                            <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">Template
+                              Cre..</a>
+                          </div>
+                        </td>
+
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Category
+                          </a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">Upsell
+                            </a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Started On
+                          </a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">01 Jan
+                              2020
+                            </a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#" style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">
+                            Last Edited
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">12 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td class="float">
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">68%</a>
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">progress</a>
+                          <div class="progress1" style="width: 100%;">
+                            <div class="progress-done2" data- done="100">
+                            </div>
+                          </div>
+                        </td>
+                        <td id="arrow"> <button type="submit" style="color: #606060; text-decoration: none;"> <i
+                              class="fas fa-chevron-right"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="Assets/image 3 (1).png" alt="img2" class="imgd">
+                        </td>
+                        <td>
+                          <a href="#"
+                            style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031; ">Jas
+                            Bahadur </a>
+                          <div>
+                            <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">Designed
+                              Ban..</a>
+                          </div>
+                        </td>
+
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Category
+                          </a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">Upsell
+                            </a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#"
+                            style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">Started
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">01 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td data-label="editjan">
+                          <a href="#" style="text-decoration: none;font-size: 14px;font-weight: normal;color: #606060;">
+                            Last Edited
+                            on</a>
+                          <div>
+                            <a href="#"
+                              style="text-decoration: none;font-size: 14px;font-weight: bold;color: #2F3031;">12 jan
+                              2020</a>
+                          </div>
+                        </td>
+                        <td class="float">
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-decoration: none;">68%</a>
+                          <a href="#"
+                            style="font-size: 14px; font-weight: normal;color: #606060;text-align: end;text-decoration: none;">progress</a>
+                          <div class="progress1" style="width: 100%;">
+                            <div class="progress-done3" data- done="70">
+                            </div>
+                          </div>
+                        </td>
+                        <td id="arrow"> <button type="submit" style="color: #606060; text-decoration: none;"> <i
+                              class="fas fa-chevron-right"></i>
+                          </button>
+                        </td>
+                      </tr>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="secondcard1">
+                <div class="row">
+                  <h3 style="font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.01em;
+padding: 10px 20px;
+color: #6B1BC6;">total count</h3>
+                  <div class="col">
+                    <img src="Assets/Jan-Business_report_1 [Converted] 1.png" alt="small" class="smallimg">
+                  </div>
+                  <div class="col" style=" transform: translateY(-40px);margin: 22px 0px;">
+                    <div class="totalviews">
+                      <div class="color1">
+                        <div id="one">
+                          <p>AI Creator</p>
+                          <p>10</p>
+                        </div>
+                      </div>
+
+                      <div class="color2">
+                        <div id="two">
+                          <p>total Views</p>
+                          <p>9</p>
+                        </div>
+                      </div>
+                      <div class="color3">
+                        <div id="three">
+                          <p>total clicks</p>
+                          <p>10</p>
+                        </div>
+                      </div>
+                      <div class="color4">
+                        <div id="four">
+                          <p>conversation rates</p>
+                          <p>34%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="cardthird">
+                <table class="table" style="width: 97%;">
+                  <tbody>
+                    <h3 style="font-family: Inter;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 20px;
+                          line-height: 24px;
+                          letter-spacing: 0.01em;
+                          padding: 10px 20px;
+                          color: #6B1BC6;">timeline</h3>
+                    <tr>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #336CFF;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                          </a>
+                          <img src="./Assets/Group 1087.png" alt="" style="
+                            position: absolute;
+                            left: 29%;
+                            top: 57px;
+                        ">
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #336CFF;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                            <img src="./Assets/Group 1085.png" alt="" style="
+                            position: absolute;
+                            left: 35%;
+        top: 53px;
+                        ">
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #336CFF;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                          </a>
+                          <img src="./Assets/Group 1087.png" alt="" style="
+                          position: absolute;
+                          left: 41%;
+      top: 53px;
+                      ">
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #336CFF;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                          </a>
+                          <img src="./Assets/Group 1089.png" alt="" style="
+                          position: absolute;
+                          left: 47%;
+      top: 53px;
+                      ">
+                        </div>
+                      </td>
+                    </tr>
+                    <!--  -->
+                    <tr>
+                      <td>
+                        <!-- <hr class="hrfirst"> -->
+                        <!-- <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;"> . </a> -->
+                      </td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #FFA800;">12
+                          Oct 10:12 AM</a>
+
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                          </a>
+                          </a>
+                          <img src="./Assets/Group 1084.png" alt="" style="
+                        position: absolute;
+                        left: 32%;
+    top: 20px;    ">
+                        </div>
+                      </td>
+                      <td>
+                        <!-- <hr class="hrsecond"> -->
+                        <!-- <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;"> . </a> -->
+                      </td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #F64E60;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #F64E60;">Generate Sales Page
+                          </a>
+                          <img src="./Assets/Group 1086.png" alt="" style="
+                          position: absolute;
+                          left: 38%;
+      top: 20px;
+                      ">
+                        </div>
+                      </td>
+                      <td>
+                        <!-- <hr class="hrthird"> -->
+                        <!-- <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;"> . </a> -->
+                      </td>
+                      <td>
+                        <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;color: #FFA800;">12
+                          Oct 10:12 AM</a>
+                        <div style="position: relative;">
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #474746;">Generate Sales Page
+                          </a>
+                          <img src="./Assets/Group 1088.png" alt="" style="
+                          position: absolute;
+                          left: 44%;
+   
+      top: 20px;
+                      ">
+                        </div>
+                      </td>
+                      <td>
+                        <!-- <hr class="hrfourth"> -->
+                        <!-- <a href="#" style="text-decoration: none; font-size: 14px; font-weight: bold;text-align: center;"> . </a> -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div id="timelinedata">
+
+                  <!-- <hr class="hrsmallone"> -->
+                  <!-- <hr class="hrsmalltwo">
+                  <hr class="hrsmallthree"> -->
+                  <img src="Assets/Group 1074.png" alt="group1" class="group1" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #E1E9FF; height: 80px;transform: rotate(-90deg);margin-top:-12px;">
+                  <img src="Assets/Group 1080.png" alt="group2" class="group2" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #FFF4DE;height: 80px;transform: rotate(-90deg);margin-top:-12px;">
+                  <img src="Assets/Group 1078.png" alt="group3" class="group3" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #C9F7F5;height: 80px;transform: rotate(-90deg); margin-top:-12px;">
+                  <img src="Assets/Group 1077.png" alt="group4" class="group4" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #FFE2E5;height: 80px;transform: rotate(-90deg); margin-top:-12px;">
+                  <img src="Assets/Group 1074.png" alt="group5" class="group5" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #E1E9FF;height: 80px;transform: rotate(-90deg);margin-top: -12px;">
+                  <img src="Assets/Group 1080.png" alt="group6" class="group6" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #FFF4DE;height: 80px;transform: rotate(-90deg);margin-top: -12px;">
+                  <img src="Assets/Group 1078.png" alt="group7" class="group7" style="width: 48px;height: 48px;">
+                  <hr style="border: 2px solid #C9F7F5;height: 80px;transform: rotate(-90deg);margin-top: -12px;">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="lastcard1">
+                <table class="table">
+                  <tbody>
+                    <h3 style="font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.01em;
+padding: 10px 1px;
+color: #6B1BC6;margin-left: 10px;">latest projects</h3>
+
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue11"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">cup &
+                          green</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">visually
+                            stunning</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue11"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">pink
+                          patterns</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">feminine all
+                            around</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue1"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">Abstract
+                          art</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">the will to capture
+                            reader</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue2"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">desserts
+                          platters</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">foods trends &
+                            inspiration</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue4"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">cup &
+                          green</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">visually
+                            stunning</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Account">
+                        <div id="blue5"><img src="Assets/Group 1076.png"></div>
+                      </td>
+                      <td>
+                        <a href="#"
+                          style="text-decoration: none; font-size: 14px; font-weight: bold;color: #2F3031;">pink
+                          patterns</a>
+                        <div>
+                          <a href="#" style="text-decoration: none; font-size: 13px;color: #606060;">feminine all
+                            around</a>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td id="arrow"> <button type="submit"
+                          style="color: #606060; text-decoration: none;font-weight: bold;">&#8594;</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lastcard2">
+                <h3 style="font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                padding: 10px 1px;
+                color: #6B1BC6;margin-left: 10px;">credit used</h3>
+                <div id="radarmain1">
+                  <div id="chart1" style="width: 1200px;">
+                  </div>
+                </div>
+                <div id="table" style="margin-top: 70px;">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td data-label="Account">
+                          <div id="blue"><img src="Assets/Group 1076.png"></div>
+                        </td>
+                        <td>
+                          <a href="#" style="text-decoration: none; font-family: Lato;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 19px;
+                          letter-spacing: 0.02em;
+                          
+                          color: #474746;">1290</a>
+                          <div>
+                            <a href="#" style="text-decoration: none;font-family: Lato;
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 14px;
+                              line-height: 19px;
+                              letter-spacing: 0.02em;
+                              
+                              color: #474746;">total credit</a>
+                          </div>
+                        </td>
+                        <td data-label="Account">
+                          <div id="blue"><img src="Assets/Group 1076.png"></div>
+                        </td>
+                        <td>
+                          <a href="#" style="text-decoration: none; font-size: 14px;font-family: Lato;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 19px;
+                          letter-spacing: 0.02em;
+                          
+                          color: #474746;">1002</a>
+                          <div>
+                            <a href="#" style="text-decoration: none; font-family: Lato;
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 14px;
+                              line-height: 19px;
+                              letter-spacing: 0.02em;
+                              
+                              color: #474746;">credit used</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-label="Account">
+                          <div id="blue"><img src="Assets/Group 1076.png"></div>
+                        </td>
+                        <td>
+                          <a href="#" style="text-decoration: none; font-size: 14px;font-family: Lato;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 19px;
+                          letter-spacing: 0.02em;
+                          
+                          color: #474746;">188</a>
+                          <div>
+                            <a href="#" style="text-decoration: none;font-family: Lato;
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 14px;
+                              line-height: 19px;
+                              letter-spacing: 0.02em;
+                              
+                              color: #474746;">credit left</a>
+                          </div>
+                        </td>
+                        <td data-label="Account">
+                          <div id="blue"><img src="Assets/Group 1076.png"></div>
+                        </td>
+                        <td>
+                          <a href="#" style="text-decoration: none;font-family: Lato;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 14px;
+                          line-height: 19px;
+                          letter-spacing: 0.02em;
+                          
+                          color: #474746;">23</a>
+                          <div>
+                            <a href="#" style="text-decoration: none;font-family: Lato;
+                              font-style: normal;
+                              font-weight: 600;
+                              font-size: 14px;
+                              line-height: 19px;
+                              letter-spacing: 0.02em;
+                              
+                              color: #474746;">total page created</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="lastcard3">
+                <h3 style="font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.01em;
+                padding: 10px 1px;
+                color: #6B1BC6;margin-left: 10px;">credit sales</h3>
+                <div id="radarmain">
+                  <div id="chart">
+                  </div>
+                </div>
+                <ul class="a" style="color: #474746;">
+                  <li><span id="radarone" style="color: #474746;"></span>Total Upsell Pages</li>
+                  <li><span id="radartwo" style="color: #474746;"></span>Total Sales Pages</li>
+                  <li><span id="radarthree" style="color: #474746;"></span>Total Optin Pages</li>
+                  <li><span id="radarfour" style="color: #474746;"></span>Total Banners</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/radarchart.js"></script>
+    <script src="js/radarhalf.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/pro.js"></script>
+    <script src="js/progress1.js"></script>
+    <script src="js/progress2.js"></script>
+    <script src="js/progress3.js"></script>
+    <script src="js/progress4.js"></script>
+    <script src="js/chartprogress.js"></script>
+    <script src="js/chartsecond.js"></script>
+    <script src="js/chartthird.js"></script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementsByClassName("dashSide").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementsByClassName("dashSide").style.marginLeft = "0";
+      }
+    </script>
+</body>
+
+</html>
